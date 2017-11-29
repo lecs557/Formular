@@ -1,0 +1,25 @@
+
+	<?import javafx.scene.control.*?>
+	<?import javafx.scene.layout.*?>
+	
+
+	<VBox stylesheets="gui/Test.css" fx:id="vbox" prefHeight="250.0" prefWidth="300.0" spacing="10" 
+		xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="windowCtrl.Controller">
+		
+		<Label alignment="CENTER" prefHeight="30.0" text="Audioplayer" textAlignment="CENTER" prefWidth="300.0"/>
+		
+		  <HBox spacing="10">
+	    	<Label fx:id="inputLbl" alignment="CENTER_LEFT" prefHeight="30.0" text="Select file" textAlignment="LEFT"/>
+	    	<Button fx:id="browse" text="Durchsuchen..." onAction="#browse"></Button>
+	    </HBox>
+	    
+	    <Label fx:id="title" prefHeight="30.0" text="Song"  />
+	    
+	    <HBox spacing="10">
+	    	<Button fx:id="play" text="Play" onAction="#play"></Button>
+	    	<Button fx:id="pause" text="Pause" onAction="#pause"></Button>
+	    	<Button fx:id="stop" text="Stop" onAction="#stop"></Button>
+	    </HBox><Button fx:id="quit" text="Schließen" onAction="#quit"></Button>
+		
+		
+	</VBox>
